@@ -21,7 +21,7 @@ public class Main {
 
         //Get info base currency and value of conversion currency
         Currency currencyInfo = baseCurrencyInfo.currencyInfo(currencyInput);
-        double currencyRate = currencyInfo.conversion_rates().get(currencyOutput);
+        double currencyRate = currencyInfo.conversionRates().get(currencyOutput);
 
         //value & casting str to int
         System.out.println("Ingresa el valor a calcular: ");

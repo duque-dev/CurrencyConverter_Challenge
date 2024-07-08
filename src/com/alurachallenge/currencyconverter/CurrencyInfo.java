@@ -28,7 +28,7 @@ public class CurrencyInfo {
                 return gson.fromJson(response.body(),Currency.class);
             } catch (Exception e) {
                 System.out.println(e.getMessage());
-                throw new RuntimeException("Algo salió mal jejeje.");
+                throw new RuntimeException("Ingrese un valor válido.");
             }
 
     }

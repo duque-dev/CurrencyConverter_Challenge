@@ -28,7 +28,8 @@ public class Main {
         int changeValue = Integer.valueOf(Input.nextLine());
 
         //currency change
-        double currencyChange = changeValue * currencyRate;
+        CurrencyChange currencyChange = new CurrencyChange();
+        currencyChange.currencyChange(changeValue,currencyRate);
         System.out.println("El valor ingresado equivale a " + currencyChange + " " + currencyOutput);
     }
 }
